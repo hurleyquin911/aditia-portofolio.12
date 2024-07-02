@@ -7,7 +7,7 @@ import Services from "./pages/Services";
 import Work from "./pages/Work";
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/aditia-portofolio.12">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/resume" element={<Resume />} />
