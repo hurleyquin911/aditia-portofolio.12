@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/aditia-portofolio.12/static/css/main.6c0b3092.css",
+    "main.js": "/aditia-portofolio.12/static/js/main.80a3498c.js",
+    "static/media/photo.png": "/aditia-portofolio.12/static/media/photo.faf1a4c517fb7e2ae04f.png",
+    "static/media/work2.jpeg": "/aditia-portofolio.12/static/media/work2.6c17ee8aa0a053f39e41.jpeg",
+    "static/media/cv.pdf": "/aditia-portofolio.12/static/media/cv.ca936a3ec195225fb27c.pdf",
+    "static/media/work3.jpg": "/aditia-portofolio.12/static/media/work3.e07b94fe38f85c7e44c6.jpg",
+    "static/media/work1.jpeg": "/aditia-portofolio.12/static/media/work1.8d2bfc86878ea4e157e7.jpeg",
+    "index.html": "/aditia-portofolio.12/index.html",
+    "main.6c0b3092.css.map": "/aditia-portofolio.12/static/css/main.6c0b3092.css.map",
+    "main.80a3498c.js.map": "/aditia-portofolio.12/static/js/main.80a3498c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6c0b3092.css",
+    "static/js/main.80a3498c.js"
+  ]
+}
