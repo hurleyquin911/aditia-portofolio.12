@@ -19,24 +19,25 @@ const info = [
   {
     icon: <FaPhoneAlt />,
     title: "Phone",
-    description: "(+62) 851-5772-6519",
+    description: "(+62) 813-34744357",
   },
   {
     icon: <FaEnvelope />,
     title: "Email",
-    description: "hurleyquin890@gmail.com",
+    description: "cemilanku@gmail.com",
   },
   {
     icon: <FaMapMarkedAlt />,
-    title: "Address",
-    description: "JawaBarat-Bogor . Bogor-kota",
+    title: "Alamat",
+    description:
+      "Pejantran RT 2, RW.4, Wonoplintahan, Kabupaten Sidoarjo, Jawa Timur",
   },
 ];
 
 const Contact = () => {
   const [formData, setFormData] = useState({
-    firstName: "",
-    lastName: "",
+    nama: "",
+    alamat: "",
     email: "",
     phone: "",
     service: "",
@@ -44,8 +45,8 @@ const Contact = () => {
   });
 
   const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
+    const { nama, value } = e.target;
+    setFormData({ ...formData, [nama]: value });
   };
 
   const handleSelectChange = (value) => {
@@ -54,8 +55,8 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const { firstName, lastName, email, phone, service, message } = formData;
-    const whatsappMessage = `Nama: ${firstName} ${lastName}\nEmail: ${email}\nPhone: ${phone}\nService: ${service}\nPesan: ${message}`;
+    const { nama, alamat, email, phone, service, message } = formData;
+    const whatsappMessage = `Nama: ${nama} Alama:${alamat}\nEmail: ${email}\nPhone: ${phone}\nService: ${service}\nPesan: ${message}`;
     const whatsappUrl = `https://wa.me/6285157726519?text=${encodeURIComponent(
       whatsappMessage
     )}`;
@@ -79,37 +80,36 @@ const Contact = () => {
                 className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl"
                 onSubmit={handleSubmit}
               >
-                <h3 className="text-4xl text-accent">
-                  Let&apos;s work together
+                <h3 className="text-4xl text-accent font-bold">
+                  Pesan Sekarang Juga
                 </h3>
                 <p className="text-white/60">
-                  Saya siap bekerja sama dengan Anda untuk memenuhi segala
-                  kebutuhan digital di bidang Web Development, UI/UX, Analisa
-                  Data dan SEO
+                  dapatkan diskon tambahan dalam menu kami pada hari tertentu
+                  agar nikmat makin terasa
                 </p>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-black">
                   <Input
                     type="text"
-                    name="firstName"
-                    placeholder="First name"
+                    name="nama"
+                    placeholder="Nama"
                     onChange={handleChange}
                   />
                   <Input
                     type="text"
-                    name="lastName"
-                    placeholder="Last name"
+                    name="alamat"
+                    placeholder="Alamat Lengkap"
                     onChange={handleChange}
                   />
                   <Input
                     type="email"
                     name="email"
-                    placeholder="Email address"
+                    placeholder="Email"
                     onChange={handleChange}
                   />
                   <Input
                     type="tel"
                     name="phone"
-                    placeholder="Phone Number"
+                    placeholder="NO.Hp"
                     onChange={handleChange}
                   />
                 </div>
@@ -119,18 +119,18 @@ const Contact = () => {
                   </SelectTrigger>
                   <SelectContent>
                     <SelectGroup>
-                      <SelectLabel>Select a service</SelectLabel>
-                      <SelectItem value="copywriting">Copywriting</SelectItem>
-                      <SelectItem value="editing">Editing</SelectItem>
-                      <SelectItem value="canva">Design Canva</SelectItem>
-                      <SelectItem value="office">Microsoft Office</SelectItem>
+                      <SelectLabel>Pilih Menu</SelectLabel>
+                      <SelectItem value="dimsum">Dimsum</SelectItem>
+                      <SelectItem value="lumpia">Lumpia</SelectItem>
+                      <SelectItem value="menu2">Menu 2</SelectItem>
+                      <SelectItem value="menu3">Menu 3</SelectItem>
                     </SelectGroup>
                   </SelectContent>
                 </Select>
                 <Textarea
-                  className="h-[200px]"
+                  className="h-[200px] text-black"
                   name="message"
-                  placeholder="Type your message here."
+                  placeholder="Tambahan pesanan"
                   onChange={handleChange}
                 />
                 <Button type="submit" className="max-w-40 bg-primary">
@@ -143,12 +143,14 @@ const Contact = () => {
                 {info.map((item, index) => {
                   return (
                     <li key={index} className="flex items-center gap-6">
-                      <div className="w-[52px] h-[52px] xl:w-[72px] xl:h-[72px] bg-[#27272c] text-primary rounded-md flex items-center justify-center">
+                      <div className="w-[52px] h-[52px] xl:w-[72px] xl:h-[72px] bg-[#27272c] text-Black rounded-md flex items-center justify-center">
                         <div>{item.icon}</div>
                       </div>
                       <div className="flex-1">
-                        <p className="text-white/60">{item.title}</p>
-                        <h3 className="text-xl">{item.description}</h3>
+                        <p className="text-black">{item.title}</p>
+                        <h3 className="text-xl text-black">
+                          {item.description}
+                        </h3>
                       </div>
                     </li>
                   );

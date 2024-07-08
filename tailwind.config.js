@@ -19,11 +19,13 @@ module.exports = {
     },
     extend: {
       colors: {
-        primary: "#a18cd1",
+        primary: "#fff5ec",
         accent: {
-          DEFAULT: "#ff0844",
+          DEFAULT: "#fd043c",
           hover: "#ffb199",
         },
+        pilihan: "#fdecdc",
+        hijau : "#8db339",
       },
       keyframes: {
         "accordion-down": {

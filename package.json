@@ -1,6 +1,5 @@
 {
-  "homepage": "https://hurleyquin911.github.io/aditia-portofolio.12",
-  "name": "new_portofolio.v12",
+  "name": "cemilanku-website.v12",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -11,6 +10,7 @@
     "@radix-ui/react-slot": "^1.1.0",
     "@radix-ui/react-tabs": "^1.1.0",
     "@radix-ui/react-tooltip": "^1.1.2",
+    "@react-google-maps/api": "^2.19.3",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -25,6 +25,7 @@
     "react-icons": "^5.2.1",
     "react-router-dom": "^6.24.0",
     "react-scripts": "5.0.1",
+    "react-scroll": "^1.9.0",
     "swiper": "^11.1.4",
     "tailwind-merge": "^2.3.0",
     "tailwindcss-animate": "^1.0.7",

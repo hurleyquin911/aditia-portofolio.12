@@ -6,19 +6,16 @@ import MobileNav from "./MobileNav";
 import { Button, buttonVariants } from "../components/ui/button";
 const Header = () => {
   return (
-    <header className="py-8 xl:p-12">
+    <header className="py-8 top-0 left-0 right-0 fixed backdrop-blur-md">
       <div className="container mx-auto flex justify-between items-center">
         <NavLink href="/">
           <h1 className=" text-4xl font-semibold font-second text-accent ">
-            Aditia <span className="text-accent">.</span>{" "}
+            Cemilanku <span className="text-accent">.</span>{" "}
           </h1>
         </NavLink>
 
         <div className="hidden xl:flex items-center gap-8">
           <Nav />
-          <NavLink to="/contact">
-            <Button variant="destructive">Hire Me</Button>
-          </NavLink>
         </div>
 
         <div className="xl:hidden">

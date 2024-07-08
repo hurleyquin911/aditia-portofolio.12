@@ -1,15 +1,16 @@
 import React from "react";
 
 import Header from "../components/Header";
-import PageTransition from "../components/PageTransition";
 import StairTransition from "../components/StairTransition";
 
 const Layout = ({ children }) => {
   return (
     <React.Fragment>
-      <Header />
+      <div className=" z-50">
+        <Header />
+      </div>
       <StairTransition />
-      <PageTransition>{children}</PageTransition>
+      {children}
     </React.Fragment>
   );
 };
